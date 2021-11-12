@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gMainVertical10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.10" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gMainVertical90"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.90" />
+
+            <TextView
+                android:id="@+id/tvMainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/app_name"
+                android:textColor="@color/mainColor"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvMainFirstName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/first_name"
+                android:textColor="@color/mainColor"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/tvMainTitle" />
+
+            <EditText
+                android:id="@+id/etMainFirstName"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/layout_edit_text"
+                android:inputType="textPersonName"
+                android:paddingStart="60dp"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/tvMainFirstName"
+                tools:ignore="Autofill, LabelFor, RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/ivMainFirstName"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="@+id/etMainFirstName"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="@+id/etMainFirstName"
+                app:layout_constraintTop_toTopOf="@+id/etMainFirstName"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvMainLastName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/last_name"
+                android:textColor="@color/mainColor"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/ivMainFirstName" />
+
+            <EditText
+                android:id="@+id/etMainLastName"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/layout_edit_text"
+                android:inputType="textPersonName"
+                android:paddingStart="60dp"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/tvMainLastName"
+                tools:ignore="Autofill, LabelFor, RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/ivMainLastName"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="@+id/etMainLastName"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="@+id/etMainLastName"
+                app:layout_constraintTop_toTopOf="@+id/etMainLastName"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvMainUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/username"
+                android:textColor="@color/mainColor"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/ivMainLastName" />
+
+            <EditText
+                android:id="@+id/etMainUsername"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/layout_edit_text"
+                android:inputType="textPersonName"
+                android:paddingStart="60dp"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/tvMainUsername"
+                tools:ignore="Autofill, LabelFor, RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/ivMainUsername"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="@+id/etMainUsername"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="@+id/etMainUsername"
+                app:layout_constraintTop_toTopOf="@+id/etMainUsername"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvMainPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/password"
+                android:textColor="@color/mainColor"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/ivMainUsername" />
+
+            <EditText
+                android:id="@+id/etMainPassword"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/layout_edit_text"
+                android:inputType="textPassword"
+                android:paddingStart="60dp"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/tvMainPassword"
+                tools:ignore="Autofill, LabelFor, RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/ivMainPassword"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_lock"
+                app:layout_constraintBottom_toBottomOf="@+id/etMainPassword"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="@+id/etMainPassword"
+                app:layout_constraintTop_toTopOf="@+id/etMainPassword"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/ivMainPasswordToggle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/etMainPassword"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@+id/etMainPassword"
+                app:layout_constraintTop_toTopOf="@+id/etMainPassword"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvMainConfirmPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/confirm_password"
+                android:textColor="@color/mainColor"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/ivMainPassword" />
+
+            <EditText
+                android:id="@+id/etMainConfirmPassword"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/layout_edit_text"
+                android:inputType="textPassword"
+                android:paddingStart="60dp"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/tvMainConfirmPassword"
+                tools:ignore="Autofill, LabelFor, RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/ivMainConfirmPassword"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_lock"
+                app:layout_constraintBottom_toBottomOf="@+id/etMainConfirmPassword"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="@+id/etMainConfirmPassword"
+                app:layout_constraintTop_toTopOf="@+id/etMainConfirmPassword"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/ivMainConfirmPasswordToggle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/etMainConfirmPassword"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@+id/etMainConfirmPassword"
+                app:layout_constraintTop_toTopOf="@+id/etMainConfirmPassword"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/layout_button"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/ivMainConfirmPasswordToggle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
