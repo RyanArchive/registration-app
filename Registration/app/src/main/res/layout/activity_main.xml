@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -15,7 +17,9 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/gMainVertical10"
@@ -35,7 +39,6 @@
                 android:id="@+id/tvMainTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
                 android:text="@string/app_name"
                 android:textColor="@color/mainColor"
                 android:textSize="18sp"
@@ -48,7 +51,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="sans-serif"
                 android:text="@string/first_name"
                 android:textColor="@color/mainColor"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
@@ -58,11 +60,9 @@
             <EditText
                 android:id="@+id/etMainFirstName"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="9dp"
-                android:background="@drawable/layout_edit_text"
+                android:layout_height="45dp"
                 android:inputType="textPersonName"
-                android:paddingStart="60dp"
+                android:paddingStart="39dp"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
                 app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
                 app:layout_constraintTop_toBottomOf="@+id/tvMainFirstName"
@@ -70,23 +70,21 @@
 
             <ImageView
                 android:id="@+id/ivMainFirstName"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="12dp"
-                android:padding="12dp"
-                android:src="@drawable/ic_person"
+                android:layout_width="36dp"
+                android:layout_height="48dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                android:src="@drawable/ic_baseline_person_outline"
                 app:layout_constraintBottom_toBottomOf="@+id/etMainFirstName"
-                app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toStartOf="@+id/etMainFirstName"
-                app:layout_constraintTop_toTopOf="@+id/etMainFirstName"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription, RtlSymmetry" />
 
             <TextView
                 android:id="@+id/tvMainLastName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="21dp"
-                android:fontFamily="sans-serif"
+                android:layout_marginTop="15dp"
                 android:text="@string/last_name"
                 android:textColor="@color/mainColor"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
@@ -96,11 +94,9 @@
             <EditText
                 android:id="@+id/etMainLastName"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="9dp"
-                android:background="@drawable/layout_edit_text"
+                android:layout_height="45dp"
                 android:inputType="textPersonName"
-                android:paddingStart="60dp"
+                android:paddingStart="39dp"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
                 app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
                 app:layout_constraintTop_toBottomOf="@+id/tvMainLastName"
@@ -108,23 +104,22 @@
 
             <ImageView
                 android:id="@+id/ivMainLastName"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="12dp"
-                android:padding="12dp"
-                android:src="@drawable/ic_person"
+                android:layout_width="36dp"
+                android:layout_height="48dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                android:src="@drawable/ic_baseline_person_outline"
                 app:layout_constraintBottom_toBottomOf="@+id/etMainLastName"
-                app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toStartOf="@+id/etMainLastName"
                 app:layout_constraintTop_toTopOf="@+id/etMainLastName"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription, RtlSymmetry" />
 
             <TextView
                 android:id="@+id/tvMainUsername"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="21dp"
-                android:fontFamily="sans-serif"
+                android:layout_marginTop="15dp"
                 android:text="@string/username"
                 android:textColor="@color/mainColor"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
@@ -134,11 +129,9 @@
             <EditText
                 android:id="@+id/etMainUsername"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="9dp"
-                android:background="@drawable/layout_edit_text"
+                android:layout_height="45dp"
                 android:inputType="textPersonName"
-                android:paddingStart="60dp"
+                android:paddingStart="39dp"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
                 app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
                 app:layout_constraintTop_toBottomOf="@+id/tvMainUsername"
@@ -146,23 +139,22 @@
 
             <ImageView
                 android:id="@+id/ivMainUsername"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="12dp"
-                android:padding="12dp"
-                android:src="@drawable/ic_person"
+                android:layout_width="36dp"
+                android:layout_height="48dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                android:src="@drawable/ic_baseline_person_outline"
                 app:layout_constraintBottom_toBottomOf="@+id/etMainUsername"
-                app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toStartOf="@+id/etMainUsername"
                 app:layout_constraintTop_toTopOf="@+id/etMainUsername"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription, RtlSymmetry" />
 
             <TextView
                 android:id="@+id/tvMainPassword"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="21dp"
-                android:fontFamily="sans-serif"
+                android:layout_marginTop="15dp"
                 android:text="@string/password"
                 android:textColor="@color/mainColor"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
@@ -172,11 +164,9 @@
             <EditText
                 android:id="@+id/etMainPassword"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="9dp"
-                android:background="@drawable/layout_edit_text"
+                android:layout_height="45dp"
                 android:inputType="textPassword"
-                android:paddingStart="60dp"
+                android:paddingStart="39dp"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
                 app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
                 app:layout_constraintTop_toBottomOf="@+id/tvMainPassword"
@@ -184,34 +174,34 @@
 
             <ImageView
                 android:id="@+id/ivMainPassword"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="12dp"
-                android:padding="12dp"
-                android:src="@drawable/ic_lock"
+                android:layout_width="36dp"
+                android:layout_height="48dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                android:src="@drawable/ic_outline_lock"
                 app:layout_constraintBottom_toBottomOf="@+id/etMainPassword"
-                app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toStartOf="@+id/etMainPassword"
                 app:layout_constraintTop_toTopOf="@+id/etMainPassword"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription, RtlSymmetry" />
 
             <ImageView
                 android:id="@+id/ivMainPasswordToggle"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:padding="12dp"
+                android:layout_width="36dp"
+                android:layout_height="48dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
                 app:layout_constraintBottom_toBottomOf="@+id/etMainPassword"
-                app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintEnd_toEndOf="@+id/etMainPassword"
                 app:layout_constraintTop_toTopOf="@+id/etMainPassword"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription, RtlSymmetry" />
 
             <TextView
                 android:id="@+id/tvMainConfirmPassword"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="21dp"
-                android:fontFamily="sans-serif"
+                android:layout_marginTop="15dp"
                 android:text="@string/confirm_password"
                 android:textColor="@color/mainColor"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
@@ -221,11 +211,9 @@
             <EditText
                 android:id="@+id/etMainConfirmPassword"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="9dp"
-                android:background="@drawable/layout_edit_text"
+                android:layout_height="45dp"
                 android:inputType="textPassword"
-                android:paddingStart="60dp"
+                android:paddingStart="39dp"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
                 app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
                 app:layout_constraintTop_toBottomOf="@+id/tvMainConfirmPassword"
@@ -233,39 +221,67 @@
 
             <ImageView
                 android:id="@+id/ivMainConfirmPassword"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="12dp"
-                android:padding="12dp"
-                android:src="@drawable/ic_lock"
+                android:layout_width="36dp"
+                android:layout_height="48dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                android:src="@drawable/ic_outline_lock"
                 app:layout_constraintBottom_toBottomOf="@+id/etMainConfirmPassword"
-                app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toStartOf="@+id/etMainConfirmPassword"
                 app:layout_constraintTop_toTopOf="@+id/etMainConfirmPassword"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription, RtlSymmetry" />
 
             <ImageView
                 android:id="@+id/ivMainConfirmPasswordToggle"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:padding="12dp"
+                android:layout_width="36dp"
+                android:layout_height="48dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
                 app:layout_constraintBottom_toBottomOf="@+id/etMainConfirmPassword"
-                app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintEnd_toEndOf="@+id/etMainConfirmPassword"
                 app:layout_constraintTop_toTopOf="@+id/etMainConfirmPassword"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription, RtlSymmetry" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/acbMainRegister"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="45dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/layout_button"
+                android:onClick="register"
                 android:text="@string/register"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
                 app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
                 app:layout_constraintTop_toBottomOf="@+id/ivMainConfirmPasswordToggle" />
+
+            <TextView
+                android:id="@+id/tvMainAlreadyHaveAnAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/already_have_an_account"
+                android:textColor="@color/mainColor"
+                app:layout_constraintEnd_toStartOf="@+id/tvMainLogin"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="@+id/gMainVertical10"
+                app:layout_constraintTop_toBottomOf="@+id/acbMainRegister" />
+
+            <TextView
+                android:id="@+id/tvMainLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/login"
+                android:textColor="@color/mainColor"
+                app:layout_constraintEnd_toStartOf="@+id/gMainVertical90"
+                app:layout_constraintStart_toEndOf="@+id/tvMainAlreadyHaveAnAccount"
+                app:layout_constraintTop_toBottomOf="@+id/acbMainRegister" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
