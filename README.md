@@ -8,6 +8,10 @@ Registration app
 
 Mobile Systems and Technologies | 03 Hands-on Activity 2 - ARG
 
+### Description
+
+It uses Intent to start a new activity, and pass data to it.
+
 <br>
 
 ## Screenshot
@@ -18,5 +22,5 @@ Mobile Systems and Technologies | 03 Hands-on Activity 2 - ARG
 
 ## Language and Tools
 
-- Kotlin
+- Java
 - Android Studio
